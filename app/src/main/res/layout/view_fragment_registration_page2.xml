@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_8">
+
+        <TextView
+            android:id="@+id/steps_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_h6"
+            android:includeFontPadding="false"
+            android:text="@string/user_registration_step2of3"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_8"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:includeFontPadding="false"
+            android:textSize="@dimen/text_h6"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/steps_indicator"
+            android:text="@string/user_registration_title_account_details"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_regular"
+        android:padding="@dimen/padding_8"
+        android:text="@string/user_registration_secure_password"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_username"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:hint="@string/placeholder_username"
+        android:maxLength="64"
+        android:textSize="@dimen/text_regular"
+        android:inputType="text"
+        android:textColor="@color/primary_400"
+        android:drawableStart="@drawable/ic_baseline_account_circle_24"
+        android:fontFamily="@font/poppins_semibold"
+        android:drawablePadding="@dimen/padding_6" />
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="@string/placeholder_email"
+        android:inputType="textEmailAddress"
+        android:maxLength="32"
+        android:textColor="@color/primary_400"
+        android:textSize="@dimen/text_regular"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="@dimen/padding_6"/>
+
+    <appdev.technologies.furfindspetshop.viewextensions.PasswordField
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="@string/placeholder_password"
+        android:inputType="textPassword"
+        android:maxLength="32"
+        android:textColor="@color/primary_400"
+        android:textSize="@dimen/text_regular"
+        android:drawablePadding="@dimen/padding_6"/>
+
+    <appdev.technologies.furfindspetshop.viewextensions.PasswordField
+        android:id="@+id/input_retype_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_4"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="@string/placeholder_confirm_password"
+        android:inputType="textPassword"
+        android:maxLength="32"
+        android:textColor="@color/primary_400"
+        android:textSize="@dimen/text_regular"
+        android:drawablePadding="@dimen/padding_6"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/padding_16"
+        android:textColor="@color/color_danger"
+        android:text="@string/password_match_error"
+        android:id="@+id/warn_label_password"
+        android:visibility="invisible"/>
+
+</LinearLayout>
+
+
+
+    <!--<Button-->
+    <!--style="@style/Transparent_Button"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="@string/button_text_cancel"-->
+    <!--android:id="@+id/btn_cancel_registration"/>-->
+
+    <!--<Button-->
+    <!--style="@style/Primary_Button"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_marginBottom="@dimen/margin_8"-->
+    <!--android:text="@string/button_text_continue"-->
+    <!--android:id="@+id/btn_continue_registration"/>-->

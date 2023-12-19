@@ -1,0 +1,5 @@
+INSERT INTO "users" (id,date_updated,image,username,role,email_verified_at,verify_code,firstname,lastname,contact,email,date_created,address,password,middlename) VALUES
+(1,'2023-12-08 00:58:53',NULL,'talline',1,'2023-12-08 00:58:53','9598','Talline','Castro','091111','talline@gmail.com','2023-12-08 00:58:46','#lingayen, pangasinan','1234','G'),
+(2,'2023-12-08 00:58:53',NULL,'mark',1,'2023-12-08 00:58:53','1200','Mark','Zuckerburg','09222','mark@facebook.com','2023-12-08 00:58:53','#Mountain View, San Diego, California','1234','E'),
+(3,'2023-12-08 00:58:53',NULL,'avril',2,'2023-12-08 00:58:53','3460','Avril','Lavigne','09333','avril@music.rocks','2023-12-08 00:58:53','Hudson Bay, Canada','1234','R'),
+(4,'2023-12-08 00:58:53',NULL,'elon',2,'2023-12-08 00:58:53','9220','Elon','Musk','09444','elon@tesla.motors','2023-12-08 00:58:53','#92 Skyway, EDSA','1234','R');

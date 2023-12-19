@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_light"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/design_default_color_primary"
+        android:padding="@dimen/padding_6">
+
+        <appdev.technologies.furfindspetshop.viewextensions.PetItemCard
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:background="@android:color/transparent"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            android:padding="0dp"
+            app:cardElevation="10dp">
+
+        </appdev.technologies.furfindspetshop.viewextensions.PetItemCard>
+
+        <appdev.technologies.furfindspetshop.viewextensions.PetItemCard
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:layout_weight="1">
+
+        </appdev.technologies.furfindspetshop.viewextensions.PetItemCard>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

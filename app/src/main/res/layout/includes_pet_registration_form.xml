@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/pet_registration_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/half_transparent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <!-- EMPTY LAYOUT TO PREVENT BACKGROUND CLICKS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_80"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- REGISTRATION CONTAINER -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/padding_16"
+            android:paddingTop="@dimen/padding_16"
+            android:paddingBottom="@dimen/padding_4"
+            android:background="@drawable/bg_semicard_container_white">
+
+            <TextView
+                android:layout_alignParentTop="true"
+                android:id="@+id/pet_registration_form_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pet_registration_title"
+                android:textSize="@dimen/text_h5"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:textColor="@color/primary_dark"
+                android:layout_marginBottom="@dimen/margin_16"/>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_below="@id/pet_registration_form_title"
+                android:layout_above="@id/pet_registration_pager_buttons"
+                android:id="@+id/pet_registration_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:id="@+id/pet_registration_pager_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <Button style="@style/Light_Button"
+                    android:textColor="@color/primary_dark"
+                    android:text="@string/button_text_cancel"
+                    android:id="@+id/btn_cancel"
+                    android:layout_toStartOf="@id/btn_next"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:layout_marginVertical="@dimen/margin_4"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:enabled="true"/>
+
+                <Button
+                    style="@style/Primary_Button"
+                    android:text="@string/button_text_next"
+                    android:id="@+id/btn_next"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginVertical="@dimen/margin_4"
+                    android:enabled="false"
+                    android:focusable="true"
+                    android:clickable="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</merge>

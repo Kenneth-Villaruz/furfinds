@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/FullscreenDecorFitSystemWindows"
+    android:fitsSystemWindows="true"
+    android:background="@color/warning_700"
+    tools:context=".GetStarted"
+    android:padding="@dimen/padding_16"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/size_250"
+        android:layout_height="@dimen/size_250"
+        android:layout_marginVertical="@dimen/margin_16"
+        android:src="@drawable/splash1"
+        android:id="@+id/img_logo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_logo"
+        android:layout_marginVertical="@dimen/margin_16"
+        android:paddingHorizontal="@dimen/padding_32"
+        android:textAlignment="center"
+        android:textColor="@color/color_darker"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_h2"
+        android:text="@string/main_activity_big_text"
+        android:id="@+id/title_text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_text"
+        android:textAlignment="center"
+        android:paddingHorizontal="@dimen/padding_20"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_h6"
+        android:textColor="@color/pantone_wenge_600"
+        android:lineSpacingExtra="@dimen/line_height_double"
+        android:text="@string/main_activity_article"
+        android:id="@+id/short_article"/>
+
+    <Button
+        android:id="@+id/btn_get_started"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_24"
+        android:background="@drawable/rounded_button_white"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/button_text_get_started" />
+
+</RelativeLayout>

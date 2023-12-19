@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/padding_16"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_8">
+
+        <TextView
+            android:id="@+id/steps_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_h6"
+            android:includeFontPadding="false"
+            android:text="@string/user_registration_step3of3"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_8"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:includeFontPadding="false"
+            android:textSize="@dimen/text_h6"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/steps_indicator"
+            android:text="@string/user_verification_title"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_regular"
+        android:paddingVertical="@dimen/padding_8"
+        android:text="@string/user_verification_code"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_16">
+
+        <EditText
+            style="@style/VerificationCode_Input"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/margin_24"
+            android:id="@+id/input_code1"
+            android:nextFocusRight="@id/input_code2"/>
+
+        <EditText
+            style="@style/VerificationCode_Input"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/margin_24"
+            android:id="@+id/input_code2"
+            android:nextFocusRight="@id/input_code3"/>
+
+        <EditText
+            style="@style/VerificationCode_Input"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/margin_24"
+            android:id="@+id/input_code3"
+            android:nextFocusRight="@id/input_code4"/>
+
+        <EditText
+            style="@style/VerificationCode_Input"
+            android:layout_weight="1"
+            android:id="@+id/input_code4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- TextView positioned to the left of the Button -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:layout_gravity="center_vertical"
+            android:text="@string/user_verification_didnt_recieve"
+            android:textColor="@color/color_dark_400"/>
+
+        <!-- Button centered horizontally and vertically -->
+        <Button
+            style="@style/LabelButton"
+            android:textAlignment="textStart"
+            android:paddingHorizontal="@dimen/padding_8"
+            android:minWidth="50dp"
+            android:text="@string/button_text_resend"
+            android:id="@+id/btn_resend" />
+
+    </LinearLayout>
+
+</LinearLayout>

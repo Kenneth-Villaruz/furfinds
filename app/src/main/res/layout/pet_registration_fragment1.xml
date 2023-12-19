@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/padding_8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_8">
+
+            <TextView
+                android:id="@+id/steps_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_h6"
+                android:includeFontPadding="false"
+                android:text="@string/user_registration_step1of3"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/text_h6"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/steps_indicator"
+                android:text="@string/pet_registration_title_identity"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_regular"
+            android:padding="@dimen/padding_8"
+            android:background="@drawable/rounded_panel_light"
+            android:text="@string/pet_registration_caption_identity"
+            android:layout_marginBottom="@dimen/margin_16"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_registration_question_name"
+            android:textColor="@color/primary_dark"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_pet_name"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:hint="@string/placeholder_pet_name"
+            android:maxLength="32"
+            android:textSize="@dimen/text_h6"
+            android:inputType="text"
+            android:textColor="@color/primary_400"
+            android:fontFamily="@font/poppins_semibold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_registration_question_age"
+            android:textColor="@color/primary_dark"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/input_pet_age"
+                android:layout_width="@dimen/size_100"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semibold"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:maxLength="3"
+                android:gravity="center"
+                android:textColor="@color/primary_400"
+                android:textSize="@dimen/text_h6"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:id="@+id/select_button_age_unit"
+                android:layout_toEndOf="@id/input_pet_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button_light_normal"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_16"
+                android:clickable="false"
+                android:focusable="false">
+
+                <Spinner
+                    android:id="@+id/age_units_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_30"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:spinnerMode="dropdown"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_registration_question_gender"
+            android:textColor="@color/primary_dark"
+            android:layout_marginBottom="@dimen/margin_8"/>
+
+        <RadioGroup
+            android:id="@+id/pet_gender_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/margin_16">
+
+            <RadioButton
+                android:id="@+id/option_gender_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_male"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:textSize="@dimen/text_h6"
+                android:textColor="@color/color_dark"/>
+
+            <RadioButton
+                android:id="@+id/option_gender_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_female"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:textSize="@dimen/text_h6"
+                android:textColor="@color/color_dark"/>
+
+            <RadioButton
+                android:id="@+id/option_gender_neuter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender_neuter"
+                android:textSize="@dimen/text_h6"
+                android:textColor="@color/color_dark"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_registration_question_belong"
+            android:textColor="@color/primary_dark"
+            android:layout_marginBottom="@dimen/margin_8"/>
+
+        <LinearLayout
+            android:id="@+id/select_button_pet_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button_light_normal"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:clickable="false"
+            android:focusable="false">
+
+            <Spinner
+                android:id="@+id/pet_category_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_30"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

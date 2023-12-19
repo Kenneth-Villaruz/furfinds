@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="@dimen/size_250"
+    android:minHeight="@dimen/size_120"
+    android:maxHeight="@dimen/size_120"
+    android:background="@drawable/rounded_panel_lighter"
+    android:paddingVertical="@dimen/padding_8"
+    android:paddingHorizontal="@dimen/padding_16">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/size_100"
+        android:maxHeight="@dimen/size_100"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitCenter"
+        android:background="@drawable/rounded_panel_light"
+        android:src="@drawable/pet_image_placeholder"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/item_image"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <appdev.technologies.furfindspetshop.viewextensions.MarqueeTextView
+            android:id="@+id/card_item_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="@dimen/text_h6"
+            android:textColor="@color/primary_400"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:text="@string/placeholder_animal_type"/>
+
+        <appdev.technologies.furfindspetshop.viewextensions.MarqueeTextView
+            android:id="@+id/card_item_caption_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="@dimen/text_regular"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:text="@string/pet_category"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+<!--<RelativeLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:minWidth="@dimen/size_250"-->
+<!--    android:minHeight="@dimen/size_120"-->
+<!--    android:padding="16dp">-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/item_image"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:src="@drawable/pet_image_placeholder" />-->
+
+<!--    <appdev.technologies.furfindspetshop.customviews.MarqueeTextView-->
+<!--        android:id="@+id/card_item_title_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_toStartOf="@id/item_image"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:text="Title Text"-->
+<!--        android:gravity="center_vertical" />-->
+
+<!--    <appdev.technologies.furfindspetshop.customviews.MarqueeTextView-->
+<!--        android:id="@+id/card_item_caption_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_toStartOf="@id/item_image"-->
+<!--        android:layout_below="@id/card_item_title_text"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:text="Caption Text"-->
+<!--        android:gravity="center_vertical" />-->
+<!--</RelativeLayout>-->

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/half_transparent"
+    android:padding="@dimen/padding_16"
+    android:visibility="invisible"
+    android:id="@+id/frame_modal_root"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_16"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_h3"
+                android:textStyle="bold"
+                android:textColor="@color/color_darker"
+                android:text="@string/placeholder_title"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:id="@+id/title_textview"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/text_h6"
+                android:paddingVertical="@dimen/padding_16"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:text="@string/placeholder_message"
+                android:textColor="@color/color_darker"
+                android:id="@+id/message_textview"
+                android:layout_below="@id/title_textview"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/message_textview"
+                android:gravity="end">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="@string/button_text_cancel"
+                    android:id="@+id/frame_modal_btn_cancel"
+                    android:layout_marginEnd="@dimen/margin_16"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button_primary"
+                    android:textColor="@color/white"
+                    android:text="@string/button_text_ok"
+                    android:id="@+id/frame_modal_btn_ok"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

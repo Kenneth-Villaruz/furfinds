@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/padding_8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_8">
+
+            <TextView
+                android:id="@+id/steps_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_h6"
+                android:includeFontPadding="false"
+                android:text="@string/user_registration_step2of3"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/text_h6"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/steps_indicator"
+                android:text="@string/pet_registration_title_community"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_registration_question_sale"
+            android:textColor="@color/primary_dark" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/pet_option_sale_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/margin_16">
+
+                <RadioButton
+                    android:id="@+id/option_sale_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_text_no"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:textSize="@dimen/text_h6"
+                    android:textColor="@color/color_dark"/>
+
+                <RadioButton
+                    android:id="@+id/option_sale_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_text_yes"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:textSize="@dimen/text_h6"
+                    android:textColor="@color/color_dark"/>
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/input_pet_price"
+                android:layout_width="@dimen/size_100"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/pet_option_sale_group"
+                android:digits="0123456789"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:hint="@string/placeholder_price"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/primary_400"
+                android:textSize="@dimen/text_h6"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_registration_question_adopt"
+            android:textColor="@color/primary_dark"
+            android:layout_marginBottom="@dimen/margin_8"/>
+
+        <RadioGroup
+            android:id="@+id/pet_option_adoption_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/margin_16">
+
+            <RadioButton
+                android:id="@+id/option_adopt_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_text_no"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:textSize="@dimen/text_h6"
+                android:textColor="@color/color_dark"/>
+
+            <RadioButton
+                android:id="@+id/option_adopt_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_text_yes"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:textSize="@dimen/text_h6"
+                android:textColor="@color/color_dark"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_registration_question_health"
+            android:textColor="@color/primary_dark"
+            android:layout_marginBottom="@dimen/margin_8"/>
+
+        <LinearLayout
+            android:id="@+id/select_health_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_30"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:background="@drawable/rounded_button_light_normal"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginStart="@dimen/margin_16">
+            <Spinner
+                android:id="@+id/pet_health_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_30"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pet_registration_question_details"
+            android:textColor="@color/primary_dark"
+            android:layout_marginBottom="@dimen/margin_8"/>
+
+        <EditText
+            android:id="@+id/input_pet_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:background="@drawable/rounded_panel_light"
+            android:gravity="top|start"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:lines="4"
+            android:maxLength="200"
+            android:maxLines="10"
+            android:padding="@dimen/padding_6"
+            android:textSize="@dimen/text_regular" />
+
+    </LinearLayout>
+
+</ScrollView>

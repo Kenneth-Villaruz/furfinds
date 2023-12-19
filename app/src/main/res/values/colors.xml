@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+    <!-- USER DEFINED -->
+    <color name="color_lighter">#F2F2F4</color>
+    <color name="color_light">#E0E0E0</color>
+
+    <color name="color_dark_400">#5B5B69</color>
+    <color name="color_dark">#454554</color>
+    <color name="color_darker">#2C2C3D</color>
+
+    <color name="primary_lighter">#E6E9F4</color>
+    <color name="primary_light">#C6CCE2</color>
+
+    <color name="primary_dark_800">#1D1D28</color>
+    <color name="primary_darker">#263264</color>
+    <color name="primary_dark">#21356C</color>
+    <color name="primary_400">#4A5A87</color>
+
+    <color name="success_dark">#03A575</color>
+    <color name="success">#03B080</color>
+
+    <color name="color_danger_dark">#C31B3C</color>
+    <color name="color_danger">#ED244B</color>
+    <color name="color_danger_light">#C07684</color>
+
+    <color name="warning_light">#FFE6C3</color>
+    <color name="warning_a600">#FEC374</color>
+    <color name="warning_400">#FFCA3E</color>
+    <color name="warning_600">#F4BE47</color>
+    <color name="warning_700">#EAB13F</color>
+    <color name="warning_800">#E98F26</color>
+    <color name="warning">#F7A912</color>
+
+    <color name="home_status_bar">#F5BA3A</color>
+    <color name="home_banner">#FBD071</color>
+
+    <color name="logo_color">@color/color_darker</color>
+    <color name="pantone_wenge">#685255</color>
+    <color name="pantone_wenge_600">#453638</color>
+    <color name="pantone_wenge_800">#221B1C</color>
+    <color name="half_transparent">#80000000</color>
+    <color name="quarter_transparent">#40000000</color>
+</resources>

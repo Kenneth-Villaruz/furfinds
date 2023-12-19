@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quarter_transparent"
+    android:padding="@dimen/padding_16"
+    android:visibility="invisible"
+    android:id="@+id/loading_spinner_dialog"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_panel_white"
+        android:padding="@dimen/padding_32"
+        android:layout_margin="@dimen/margin_16"
+        android:layout_centerInParent="true"
+        android:elevation="10dp">
+
+        <ProgressBar
+            android:id="@+id/progress_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:indeterminateTint="@color/color_danger" />
+
+        <TextView
+            android:id="@+id/loading_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/progress_spinner"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/loading_title"
+            android:textColor="@color/primary_dark"
+            android:textSize="@dimen/text_h5" />
+
+        <TextView
+            android:id="@+id/loading_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loading_title"
+            android:layout_toEndOf="@id/progress_spinner"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/loading_caption"
+            android:textSize="@dimen/text_regular" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

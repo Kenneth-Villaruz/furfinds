@@ -1,0 +1,257 @@
+<resources>
+    <!--    <string name="app_name">FurFinds Pet Shop</string>-->
+    <string name="app_name">FurFinds Community</string>
+    <string name="title_activity_landing">Landing</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="main_activity_big_text">Ready to make a new friend?</string>
+    <string name="main_activity_article">Discover a world of wagging tails, playful paws, and furry companions! From loyal dogs to quirky cats, explore a curated selection of adorable animals waiting to bring joy to your home. </string>
+
+    <string name="landing_page_big_text">Let\'s get started</string>
+    <string name="landing_page_article">For the Love of Paws: Connect, Adopt &amp; Shop. Discover your perfect pet companion, connect with a community that shares your passion, adopt a new pet, or find the perfect accessory for your furry friend.</string>
+
+    <string name="user_login_title">Welcome back!</string>
+    <string name="user_login_sign_in_caption">Please sign in to continue</string>
+
+    <string name="user_registration_title">User Registration</string>
+    <string name="user_registration_article">FurFinds is not just an app, it\'s a haven for all things pets. Register now and join our community of pet enthusiasts.</string>
+    <string name="user_registration_enter_email">Enter your email address and we\'ll send you a verification code.</string>
+    <string name="user_registration_warning">Don\'t miss out on the chance to connect, adopt, and shop for your furry friends. FurFinds is waiting for you!\n\nAre you sure, you want to cancel the registration?</string>
+    <string name="user_registration_title_personal_details">Personal details</string>
+    <string name="user_registration_enter_full_details">For us and the community to better recognize you, kindly provide your real identity.</string>
+    <string name="user_registration_switch_login">Would you like to cancel the registration process? Please note that your entry details will not be saved.</string>
+    <string name="user_verification_title">Verification</string>
+    <string name="user_verification_code">Please enter the 4-digit verification code that was sent to your email.</string>
+    <string name="user_verification_didnt_recieve">Didn\'t receive the code?</string>
+    <string name="button_text_register">Register</string>
+    <string name="button_text_continue">Continue</string>
+
+    <string name="button_text_resend">Resend</string>
+    <string name="button_text_verify">Verify</string>
+    <string name="button_text_cancel">Cancel</string>
+    <string name="button_text_forgot">Forgot Password</string>
+    <string name="button_text_get_started">Get Started</string>
+    <string name="button_text_login">Login</string>
+    <string name="button_text_dont_have_account">Don\'t have an account?</string>
+    <string name="button_text_have_account">Already have an account?</string>
+    <string name="button_text_sign_up">Sign up</string>
+    <string name="button_text_ok">OK</string>
+    <string name="email_or_username">Email or username</string>
+    <string name="warning_fillout_email_uname">We cannot proceed without your username, email, or password. Please fill in these details to continue.</string>
+    <string name="warning_fillout_password">It appears you forgot to fill out your password. If you can\'t remember your password, tap on \"Forgot Password\" to reset it.</string>
+    <string name="login_unsuccessful">Incorrect email or password. Please try again.</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="placeholder_password">Password</string>
+    <string name="placeholder_confirm_password">Confirm Password</string>
+    <string name="placeholder_email">Email</string>
+    <string name="placeholder_firstname">Firstname</string>
+    <string name="placeholder_middlename">Middlename</string>
+    <string name="placeholder_lastname">Lastname</string>
+    <string name="placeholder_search">Search</string>
+    <string name="placeholder_title">Title</string>
+    <string name="placeholder_text">Text</string>
+    <string name="placeholder_message">Message</string>
+    <string name="placeholder_dogs">Dogs</string>
+    <string name="placeholder_cats">Cats</string>
+    <string name="placeholder_birds">Birds</string>
+    <string name="placeholder_fish">Fish</string>
+    <string name="placeholder_others">Others</string>
+    <string name="placeholder_animal_type">Animal Type</string>
+
+    <string name="bottom_nav_home">Home</string>
+    <string name="bottom_nav_favorite">Favorites</string>
+    <string name="bottom_nav_pets">Pets</string>
+    <string name="bottom_nav_chat">Chat</string>
+    <string name="bottom_nav_cart">Cart</string>
+    <string name="bottom_nav_profile">Profile</string>
+
+    <string name="pet_category">Pet Category</string>
+    <string name="new_pets">New Pets</string>
+
+    <string name="content_end_of_line">End of the Line</string>
+    <string name="content_reached_end">You\'ve reached the end. Thanks for Exploring!</string>
+    <string name="content_see_details">See Details...</string>
+    <string name="pets_for_you">Pets For You</string>
+    <string name="user_registration_step1of3">Step 1 of 3:</string>
+    <string name="user_registration_step2of3">Step 2 of 3:</string>
+    <string name="user_registration_step3of3">Step 3 of 3:</string>
+    <string name="placeholder_contact">Contact No.</string>
+    <string name="placeholder_address">Address</string>
+    <string name="button_text_next">Next</string>
+    <string name="placeholder_username">Username</string>
+    <string name="user_registration_title_account_details">Account details</string>
+    <string name="user_registration_secure_password">Please use a strong password that is at least 8 characters long and includes a mix of letters, numbers, and special characters.</string>
+    <string name="password_match_error">Passwords didn\'t matched</string>
+    <string name="password_criteria_error">Invalid password</string>
+    <string name="password_didnt_matched">Your passwords didn\'t match. Please retype your password to confirm.</string>
+    <string name="user_registration_failed">There seems to have been an issue with your registration. Please try again, and if the problem persists, contact our support team for assistance. Thank you.</string>
+    <string name="warning_verification_not_match">The verification code you entered does not match the one we sent to you. Please check your inbox and try again. If you continue to experience issues, consider requesting a new verification code.</string>
+    <string name="verification_success">Your account verification was successful and you can now proceed to login. Welcome to the community!</string>
+    <string name="placeholder_search_results">Search results for:</string>
+    <string name="placeholder_close">Close</string>
+    <string name="placeholder_sort">Sort</string>
+    <string name="placeholder_sort_up">Sort Up</string>
+    <string name="placeholder_sort_down">Sort Down</string>
+    <string name="warn_empty_search">Please enter a search term</string>
+    <string name="err_pet_data">Sorry, we are unable to read the pet\'s record information.</string>
+    <string name="placeholder_location">Location</string>
+    <string name="placeholder_details">Details</string>
+    <string name="placeholder_owner">Owner</string>
+    <string name="button_text_follow">+ Follow</string>
+    <string name="button_text_view_profile">View Profile</string>
+    <string name="placeholder_no_details">The pet owner has not provided details for this pet.</string>
+    <string name="placeholder_register_date">Registered on (date)</string>
+    <string name="placeholder_not_for_sale">Not For Sale</string>
+    <string name="placeholder_category">Category</string>
+    <string name="placeholder_for_adoption">For adoption</string>
+    <string name="placeholder_age">Age</string>
+    <string name="placeholder_sex">Sex</string>
+    <string name="placeholder_health">Health</string>
+    <string name="button_text_adopt">Adopt</string>
+    <string name="button_text_add_cart">Add to cart</string>
+    <string name="msg_success_favorite">Added to favorites</string>
+    <string name="prompt_remove_pet_favorites">Do you wish to remove this pet from your favorites?</string>
+    <string name="success_remove_favorites">Pet successfully removed from favorites. You can add this again to your favorites list anytime.</string>
+    <string name="err_action_failed">Unable to complete action due to an error. Please try again later. If the issue persists, contact our support team. Thank you.</string>
+    <string name="placeholder_my_favorites">My Favorites</string>
+    <string name="placeholder_my_followers">My Followers</string>
+    <string name="placeholder_my_pets">My Pets</string>
+    <string name="button_text_back">Back</string>
+    <string name="placeholder_find">Find</string>
+    <string name="empty_favorites">It looks like you haven\'t added any favorites yet. Start exploring and add some!</string>
+    <string name="empty_pets">It looks like you haven\'t added any pets yet. Register your pet now.</string>
+    <string name="empty_cart">Your cart is currently empty! Don\'t miss out on our amazing furry friends! Continue shopping and find your next companion.\n\nHappy shopping!</string>
+    <string name="title_activity_pets">My Pets</string>
+    <string name="pet_registration_title_identity">Pet Identity</string>
+    <string name="pet_registration_caption_identity">In order to create a genuine and trustworthy community for all pet lovers, we kindly request you to provide the real identity of your pet. This helps us ensure that all pets on our platform are real and helps maintain the integrity of our community.</string>
+    <string name="pet_registration_question_name">1. What is your pet\'s name?</string>
+    <string name="pet_registration_question_age">2. How old is your pet?</string>
+    <string name="pet_registration_question_gender">3. What is your pet\'s gender?</string>
+    <string name="pet_registration_question_belong">4. Which category does your pet belong to?</string>
+    <string name="pet_registration_question_sale">5. Are you planning to sell your pet?</string>
+    <string name="pet_registration_question_adopt">6. Is your pet available for adoption?</string>
+    <string name="pet_registration_question_health">7. What is your pet\'s current health condition?</string>
+    <string name="pet_registration_question_details">8. Give details about your pet.</string>
+    <string name="pet_registration_question_photo">Please take a photo of your pet</string>
+    <string name="pet_registration_title">Pet Registration Form</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_neuter">I don\'t know</string>
+    <string name="placeholder_pet_name">i.e. German Shepherd, Husky, etc.</string>
+    <string name="cancel_pet_registration">Do you wish to cancel the registration process?</string>
+    <string name="double_check_entries">All fields must be completed before submission. Don\'t forget to fill in all necessary information.</string>
+    <string name="item_choose">Choose</string>
+    <string name="pet_registration_title_community"><![CDATA[Community & Adoption]]></string>
+    <string name="button_text_yes">Yes</string>
+    <string name="button_text_no">No</string>
+    <string name="placeholder_price">Price</string>
+
+    <string-array name="pet_category_search_filters">
+        <item>All</item>
+        <item>Dogs</item>
+        <item>Cats</item>
+        <item>Birds</item>
+        <item>Fish</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="pet_categories">
+        <item>@string/item_choose</item>
+        <item>Dogs</item>
+        <item>Cats</item>
+        <item>Birds</item>
+        <item>Fish</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="pet_age_units">
+        <item>Days</item>
+        <item>Weeks</item>
+        <item>Months</item>
+        <item>Years</item>
+    </string-array>
+
+    <string-array name="pet_age_unit_select">
+        <item>@string/item_choose</item>
+        <item>Days</item>
+        <item>Weeks</item>
+        <item>Months</item>
+        <item>Years</item>
+    </string-array>
+
+    <string-array name="pet_health_conditions_select">
+        <item>@string/item_choose</item>
+        <item>Fit</item>
+        <item>Chronic</item>
+        <item>Obese</item>
+        <item>Underweight</item>
+        <item>Minor Issues</item>
+    </string-array>
+    <string name="title_activity_pet_registration_fragment3">PetRegistrationFragment3</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="pet_registration_caption_take_photo">Show off your pet\'s unique charm! Taking a photo helps others in our community truly appreciate your pet\'s personality and appearance.\n\nLet\'s take a photo of your pet!</string>
+    <string name="pet_registration_title_pet_photo">Pet Photo</string>
+    <string name="button_text_take_photo">Take Photo</string>
+    <string name="button_text_clear_photo">Clear</string>
+    <string name="consent_camera_storage">Our app needs access to your camera and storage to take and save photos. These permissions are essential for our app to function properly. Please tap \"Allow\" when asked for these permissions. Thank you!</string>
+    <string name="alert_title_consent">User Consent</string>
+    <string name="placeholder_image">Image</string>
+    <string name="button_text_retry">Retry</string>
+    <string name="warning_take_photo">Please take a photo of your pet.</string>
+    <string name="success_register_pet">Pet successfully registered!</string>
+    <string name="placeholder_success">Success</string>
+    <string name="button_text_delete_pet">Delete Pet</string>
+    <string name="button_text_edit_details">Edit Details</string>
+    <string name="placeholder_actions">Actions</string>
+    <string name="warning_delete_pet">Are you sure you want to delete your pet? This action cannot be undone.</string>
+    <string name="success_delete_pet">Pet has been successfully deleted.</string>
+    <string name="pet_edit_details_form_title">Edit Pet Details</string>
+    <string name="cancel_pet_edit">Are you sure you want to cancel editing your pet details?</string>
+    <string name="success_update_pet">Pet information successfully updated</string>
+    <string name="failure_update_pet">A problem has occurred while trying to update your pet\'s details. Please try again later. If the issue persists, contact our support team. Thank you.</string>
+    <string name="button_text_update">Update</string>
+    <string name="loading_caption">This shouldn\'t take long</string>
+    <string name="loading_title">Loading…</string>
+    <string name="placeholder_total_pets">0 Total Pets</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="account_details">Account Details</string>
+    <string name="button_text_save">Save</string>
+    <string name="placeholder_name">Name</string>
+    <string name="prompt_logout">Do you wish to log out of your session?</string>
+    <string name="button_text_change_pass">Change Password</string>
+    <string name="title_activity_cart">Cart</string>
+    <string name="placeholder_total_items">0 Total Items</string>
+    <string name="button_text_continue_shopping">Continue Shopping</string>
+    <string name="prompt_remove_pet_cart">Would you like to remove this pet from the cart?</string>
+    <string name="msg_success_cart">Pet added to cart</string>
+    <string name="button_text_drop_from_cart">Drop</string>
+    <string name="btn_text_checkout">Checkout</string>
+    <string name="title_community">Community</string>
+    <string name="empty_posts">It seems quiet here… There are no posts yet from the people in the community. Break the ice and start a topic!\n\nTap on \"<b>+</b>\" to post a topic.</string>
+    <string name="placeholder_post_owner">Post owner</string>
+    <string name="placeholder_date">Date</string>
+    <string name="placeholder_post_content">Your long post goes here...</string>
+
+    <!--    here are some common conditions that pets may experience:-->
+
+    <!--    Fit: The pet is in good health with no known illnesses or conditions.-->
+    <!--    Injured: The pet has sustained a physical injury.-->
+    <!--    Sick: The pet is ill, which could be due to a variety of diseases or conditions.-->
+    <!--    Chronic Condition: The pet has a long-term health condition such as diabetes, arthritis, or heart disease.-->
+    <!--    Recovering: The pet is in the process of recovering from an illness, injury, or surgery.-->
+    <!--    Elderly: The pet is older and may have health issues associated with aging.-->
+    <!--    Pregnant: The pet is expecting offspring.-->
+    <!--    Allergies: The pet has known allergies.-->
+    <!--    Obese: The pet is overweight, which can lead to other health issues.-->
+    <!--    Underweight: The pet is underweight, which could indicate a health issue.-->
+
+</resources>

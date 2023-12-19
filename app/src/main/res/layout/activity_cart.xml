@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash2"
+    android:fitsSystemWindows="true"
+    android:theme="@style/FullscreenDecorFitSystemWindows"
+    tools:context=".Cart"
+    tools:ignore="ContentDescription">
+
+    <!-- CONTENT -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- ACTION BAR RIBBON -->
+        <RelativeLayout
+            android:id="@+id/action_bar_ribbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/padding_16"
+            android:paddingVertical="@dimen/padding_8"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_panel_white"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:text="@string/title_activity_cart"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/text_h6" />
+
+            <Button
+                android:id="@+id/btn_checkout"
+                style="@style/Danger_Button"
+                android:layout_height="@dimen/size_45"
+                android:layout_alignParentEnd="true"
+                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_white_24"
+                android:paddingHorizontal="@dimen/padding_16"
+                android:text="@string/btn_text_checkout"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <!-- RECYCLER VIEW WRAPPER -->
+        <RelativeLayout
+            android:layout_below="@id/action_bar_ribbon"
+            android:id="@+id/recyclerview_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- STATUS COUNTER GOES HERE -->
+            <TextView
+                android:id="@+id/tx_total_cart_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginHorizontal="@dimen/margin_8"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/placeholder_total_items"
+                android:textColor="@color/primary_dark" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@id/tx_total_cart_items"
+                android:id="@+id/cart_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <!-- EMPTY CART LIST INDICATOR-->
+        <LinearLayout
+            android:id="@+id/empty_cart"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_16"
+            android:elevation="10dp"
+            android:background="@drawable/rounded_panel_white"
+            android:padding="@dimen/padding_32">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/empty_cart"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:textSize="@dimen/text_h6" />
+
+            <Button
+                android:id="@+id/btn_continue_shopping"
+                android:layout_width="match_parent"
+                style="@style/Primary_Button"
+                android:text="@string/button_text_continue_shopping"/>
+
+        </LinearLayout>
+
+        <!-- BOTTOM NAVIGATION -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            style="@style/BottomNavMenu"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottom_nav_menu" />
+
+    </RelativeLayout>
+
+    <!-- LOADING SPINNER PROGRESSBAR -->
+    <include layout="@layout/includes_loading_spinner" />
+
+    <!-- MODAL -->
+    <include layout="@layout/includes_frame_modal" />
+
+</FrameLayout>

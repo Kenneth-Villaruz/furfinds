@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_light"
+    android:fitsSystemWindows="true"
+    android:theme="@style/FullscreenDecorFitSystemWindows"
+    tools:context=".PetDetails"
+    tools:ignore="ContentDescription">
+
+    <!-- CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_16"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- HEADER -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_16">
+
+                <Button
+                    android:id="@+id/btn_back"
+                    style="@style/Transparent_Back_Button"
+                    android:layout_height="@dimen/size_30"
+                    android:textSize="@dimen/text_h6"
+                    android:text="@string/placeholder_my_pets"
+                    android:textColor="@drawable/transparent_back_button_text_color"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:drawablePadding="@dimen/padding_8"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:drawableStart="@drawable/transparent_back_button_icon_primary"
+                    android:paddingEnd="@dimen/padding_6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/placeholder_details"
+                    android:textSize="@dimen/text_h6"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/primary_darker"/>
+
+            </RelativeLayout>
+
+            <!-- IMAGE -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/rounded_12"
+                app:cardElevation="0dp"
+                app:cardMaxElevation="0dp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <appdev.technologies.furfindspetshop.viewextensions.SquareImageView
+                        android:id="@+id/pet_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_placeholder" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ARTICLE -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_8">
+
+                <TextView
+                    android:id="@+id/pet_name"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/price_wrapper"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:ellipsize="end"
+                    android:text="Petname"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="@dimen/text_h5"
+                    android:fontFamily="@font/poppins_semibold"/>
+
+                <!-- PRICE WRAPPER -->
+                <RelativeLayout
+                    android:id="@+id/price_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true">
+
+                    <ImageView
+                        android:id="@+id/icn_price_tag"
+                        android:layout_width="@dimen/size_30"
+                        android:layout_height="@dimen/size_30"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin_8"
+                        android:src="@drawable/icn_pricetag" />
+
+                    <TextView
+                        android:id="@+id/pet_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/icn_price_tag"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:includeFontPadding="false"
+                        android:text="0.0"
+                        android:textColor="@color/color_danger"
+                        android:textSize="@dimen/text_h4" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <!-- CATEGORY -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_16">
+
+                <TextView
+                    android:id="@+id/pet_category_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:text="@string/placeholder_category"
+                    android:textSize="@dimen/text_regular" />
+
+                <TextView
+                    android:id="@+id/pet_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:layout_toEndOf="@id/pet_category_title"
+                    android:layout_toStartOf="@id/adoption_badge"
+                    android:text="Category"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="@dimen/text_h6" />
+
+                <!-- ADOPTION BADGE -->
+                <RelativeLayout
+                    android:id="@+id/adoption_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/icn_adopt"
+                        android:layout_alignParentStart="true"
+                        android:layout_width="@dimen/size_30"
+                        android:layout_height="@dimen/size_30"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin_4"
+                        android:src="@drawable/icn_adopt"/>
+
+                    <TextView
+                        android:layout_toEndOf="@id/icn_adopt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:layout_centerVertical="true"
+                        android:text="@string/placeholder_for_adoption"/>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <!-- PET BIO -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_16">
+
+                <!-- PET AGE -->
+                <LinearLayout
+                    android:id="@+id/favorites_wrapper"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_4"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="start"
+                        android:includeFontPadding="false"
+                        android:text="@string/placeholder_age"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="@dimen/text_regular" />
+
+                    <TextView
+                        android:id="@+id/pet_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:includeFontPadding="false"
+                        android:text="@string/placeholder_age"
+                        android:textSize="@dimen/text_regular" />
+
+                </LinearLayout>
+
+                <!-- PET Health -->
+                <LinearLayout
+                    android:layout_toStartOf="@id/followers_wrapper"
+                    android:layout_toEndOf="@id/favorites_wrapper"
+                    android:id="@+id/pet_health_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_4"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/placeholder_health"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="@dimen/text_regular" />
+
+                    <TextView
+                        android:id="@+id/pet_health"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/placeholder_health"
+                        android:textSize="@dimen/text_regular" />
+
+                </LinearLayout>
+
+                <!-- PET GENDER -->
+                <LinearLayout
+                    android:id="@+id/followers_wrapper"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_4"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="end"
+                        android:includeFontPadding="false"
+                        android:text="@string/placeholder_sex"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="@dimen/text_regular" />
+
+                    <TextView
+                        android:id="@+id/pet_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:includeFontPadding="false"
+                        android:text="@string/placeholder_sex"
+                        android:textSize="@dimen/text_regular" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!-- DETAILS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/margin_16">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:text="@string/placeholder_details"
+                    android:includeFontPadding="false"
+                    android:drawablePadding="@dimen/padding_4"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="@dimen/text_regular"
+                    android:textColor="@color/primary_dark"
+                    app:drawableStartCompat="@drawable/ic_baseline_info_16" />
+
+                <TextView
+                    android:id="@+id/pet_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/placeholder_details"
+                    android:includeFontPadding="false"
+                    android:textSize="@dimen/text_h6" />
+
+                <TextView
+                    android:id="@+id/register_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:textStyle="italic"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:text="@string/placeholder_register_date"
+                    android:includeFontPadding="false"/>
+
+            </LinearLayout>
+
+            <!-- OWNER PROFILE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:text="@string/placeholder_actions"
+                android:includeFontPadding="false"
+                android:drawablePadding="@dimen/padding_4"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="@dimen/text_regular"
+                android:textColor="@color/primary_dark"/>
+
+            <!-- EDIT / DELETE BUTTONS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_edit_pet_details"
+                    style="@style/White_Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_8"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    android:layout_weight="1"
+                    android:text="@string/button_text_edit_details"
+                    android:textColor="@color/primary_darker"
+                    android:filterTouchesWhenObscured="true"/>
+
+                <Button
+                    android:id="@+id/btn_delete_my_pet"
+                    style="@style/Danger_Button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:layout_marginBottom="@dimen/margin_16"
+                    android:layout_weight="1"
+                    android:text="@string/button_text_delete_pet"
+                    android:textColor="@color/white"
+                    android:filterTouchesWhenObscured="true"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- REGISTRATION OVERLAY -->
+    <include layout="@layout/includes_pet_registration_form" />
+
+    <include layout="@layout/includes_frame_modal" />
+</FrameLayout>

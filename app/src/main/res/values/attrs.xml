@@ -1,0 +1,22 @@
+<resources>
+    <declare-styleable name="FullscreenAttrs">
+        <attr name="fullscreenBackgroundColor" format="color" />
+        <attr name="fullscreenTextColor" format="color" />
+    </declare-styleable>
+    
+    <declare-styleable name="ImageLabel">
+        <attr name="imageWidth" format="dimension"/>
+        <attr name="imageHeight" format="dimension"/>
+        <attr name="imageSrc" format="reference" />
+        <attr name="labelText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ItemCardHorizontal">
+        <attr name="cardImageWidth" format="dimension"/>
+        <attr name="cardImageHeight" format="dimension"/>
+        <attr name="cardImageSrc" format="reference" />
+        <attr name="cardTitleText" format="string" />
+        <attr name="cardCaptionText" format="string" />
+    </declare-styleable>
+
+</resources>

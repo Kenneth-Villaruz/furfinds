@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_light"
+    android:theme="@style/HomeTheme"
+    android:fitsSystemWindows="true"
+    tools:context=".Home">
+
+    <!-- CONTENT -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- BANNER -->
+        <RelativeLayout
+            android:id="@+id/home_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/home_banner"
+            android:padding="@dimen/padding_16">
+
+            <ImageView
+                android:layout_width="@dimen/size_80"
+                android:layout_height="@dimen/size_20"
+                android:src="@drawable/logo_text_svg"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_centerInParent="true"
+                style="@style/PageTitleText"
+                android:textSize="@dimen/text_h6"
+                android:textColor="@color/pantone_wenge_600"
+                android:text="@string/title_community"/>
+
+            <ImageView
+                android:layout_width="@dimen/size_45"
+                android:layout_height="@dimen/size_45"
+                android:src="@drawable/icn_avatar"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <!-- EMPTY POSTS LIST INDICATOR-->
+        <TextView
+            android:id="@+id/empty_posts"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/margin_16"
+            android:elevation="10dp"
+            android:textSize="@dimen/text_h6"
+            android:gravity="center"
+            android:background="@drawable/rounded_panel_white"
+            android:text="@string/empty_posts"
+            android:padding="@dimen/padding_32"/>
+
+        <!-- RECYCLER VIEW OF CONTENTS -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginBottom="@dimen/margin_4"
+            android:layout_below="@id/home_banner"
+            android:layout_above="@id/bottom_nav_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/posts_recycler"/>
+
+        <!-- POSTS BUTTON -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="@dimen/margin_24"
+            android:layout_above="@id/bottom_nav_menu"
+            android:clickable="true"
+            android:contentDescription="Post"
+            android:focusable="true"
+            android:src="@drawable/ic_baseline_add_24"
+            app:rippleColor="@color/primary_light" />
+
+        <!-- BOTTOM NAVIGATION MENU -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav_menu"
+            style="@style/BottomNavMenu"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <!-- LOADING SPINNER PROGRESSBAR -->
+    <include layout="@layout/includes_loading_spinner" />
+
+    <!-- ALERT DIALOG -->
+    <include layout="@layout/includes_frame_modal" />
+
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:iconTint="@null"
+        android:id="@+id/nav_item_home"
+        android:title="@string/bottom_nav_home"
+        android:icon="@drawable/bottom_nav_selector_home"
+        tools:targetApi="26" />
+
+    <item
+        android:iconTint="@null"
+        android:id="@+id/nav_item_pets"
+        android:title="@string/bottom_nav_pets"
+        android:icon="@drawable/bottom_nav_selector_pets"
+        tools:targetApi="26"/>
+
+<!--    <item-->
+<!--        android:iconTint="@null"-->
+<!--        android:id="@+id/nav_item_chat"-->
+<!--        android:title="@string/bottom_nav_chat"-->
+<!--        android:icon="@drawable/bottom_nav_selector_chat"-->
+<!--        tools:targetApi="26"/>-->
+
+    <item
+        android:iconTint="@null"
+        android:id="@+id/nav_item_cart"
+        android:title="@string/bottom_nav_cart"
+        android:icon="@drawable/bottom_nav_selector_cart"
+        tools:targetApi="26"/>
+
+    <item
+        android:iconTint="@null"
+        android:id="@+id/nav_item_profile"
+        android:title="@string/bottom_nav_profile"
+        android:icon="@drawable/bottom_nav_selector_account"
+        tools:targetApi="26"/>
+</menu>

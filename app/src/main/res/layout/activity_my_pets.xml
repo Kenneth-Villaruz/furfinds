@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/splash4"
+    android:theme="@style/FullscreenDecorFitSystemWindows"
+    android:fitsSystemWindows="true"
+    tools:context=".MyPets"
+    tools:ignore="ContentDescription">
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/size_200"-->
+<!--        android:scaleType="fitXY"/>-->
+
+    <!-- CONTENT -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- ACTION BAR RIBBON -->
+        <RelativeLayout
+            android:id="@+id/action_bar_ribbon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_16"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_panel_white"
+            android:layout_alignParentTop="true">
+
+            <Button
+                android:id="@+id/my_pets_btn_back"
+                style="@style/Transparent_Back_Button"
+                android:minWidth="@dimen/size_30"
+                android:layout_height="@dimen/size_30"
+                android:layout_width="wrap_content"
+                android:text="@string/button_text_back"
+                android:layout_centerVertical="true"
+                android:paddingEnd="@dimen/padding_6"
+                android:layout_alignParentStart="true"
+                android:filterTouchesWhenObscured="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:text="@string/title_activity_pets"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/text_h6" />
+
+            <ImageButton
+                android:id="@+id/btn_search"
+                style="@style/Transparent_Button"
+                android:layout_height="@dimen/size_30"
+                android:layout_width="@dimen/size_30"
+                android:src="@drawable/ic_baseline_search_24"
+                android:layout_centerVertical="true"
+                android:textColor="@color/primary_dark"
+                android:layout_toStartOf="@id/btn_menu"
+                android:layout_marginEnd="@dimen/margin_8"/>
+
+            <ImageButton
+                android:id="@+id/btn_menu"
+                style="@style/Transparent_Button"
+                android:layout_height="@dimen/size_30"
+                android:layout_width="@dimen/size_30"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                android:layout_centerVertical="true"
+                android:textColor="@color/primary_dark"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <!-- RECYCLER VIEW WRAPPER -->
+        <RelativeLayout
+            android:layout_below="@id/action_bar_ribbon"
+            android:id="@+id/recyclerview_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- STATUS COUNTER GOES HERE -->
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tx_total_pets"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/primary_dark"
+                android:layout_marginHorizontal="@dimen/margin_8"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:text="@string/placeholder_total_pets"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@id/tx_total_pets"
+                android:id="@+id/pets_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <!-- EMPTY PETS LIST INDICATOR-->
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/empty_pets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_32"
+            android:text="@string/empty_pets"
+            android:textSize="@dimen/text_h5"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_pets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:contentDescription="Add a new pet"
+        android:focusable="true"
+        android:src="@drawable/ic_baseline_add_24"
+        app:rippleColor="@color/primary_light"
+        android:visibility="invisible"/>
+
+    <!-- REGISTRATION OVERLAY -->
+    <include layout="@layout/includes_pet_registration_form" />
+
+    <!-- LOADING SPINNER PROGRESSBAR -->
+    <include layout="@layout/includes_loading_spinner" />
+
+    <!-- MODAL -->
+    <include layout="@layout/includes_frame_modal" />
+
+</FrameLayout>
